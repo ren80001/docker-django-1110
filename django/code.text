@@ -1,8 +1,11 @@
-#http://パブリックip:80/
-#awsでも起動を確認
+このソースはdocker-composeでdjangoの開発環境を作ったもので、まだdbなどはいじっていない。
 
-#git clone でクローン後に docker-compose up -d で起動
-#
+git clone でクローン後に docker-compose up -d で起動
+http://localhost:80で確認をする。
+
+■コマンド
+docker-compose run python ./manage.py makemigrations
+docker-compose run python ./manage.py migrate
 
 #参考サイト
 https://qiita.com/frosty/items/e545c6258672d88b7707
@@ -15,3 +18,5 @@ systemctl start docker
 
 #参考URL
 https://ameblo.jp/yukozutakeshizu/entry-12534259130.html
+#http://パブリックip:80/
+#awsでも起動を確認
