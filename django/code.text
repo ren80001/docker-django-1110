@@ -1,0 +1,17 @@
+#http://パブリックip:80/
+#awsでも起動を確認
+
+#git clone でクローン後に docker-compose up -d で起動
+#
+
+#参考サイト
+https://qiita.com/frosty/items/e545c6258672d88b7707
+
+#滅びの呪文
+docker-compose down --rmi all --volumes
+
+#docker-composeコマンドが使用できなかったに試したコマンド
+systemctl start docker
+
+#参考URL
+https://ameblo.jp/yukozutakeshizu/entry-12534259130.html
